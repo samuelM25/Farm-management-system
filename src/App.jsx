@@ -5,12 +5,14 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from'./components/Navbar/Navbar.jsx'
 import Sidebar from'./components/Sidebar/Sidebar.jsx'
+import Login from'./components/login/login.jsx'
 
 
 function App() {
 
 return(
   <>
+  
   <div className='d-flex flex-column vh-100'>
    <Navbar />
     

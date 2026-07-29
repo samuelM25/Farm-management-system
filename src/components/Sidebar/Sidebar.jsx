@@ -19,7 +19,7 @@ function Sidebar(){
 
                 <li className="nav-item mb-3">
                     <a className="nav-link text-white active" href="">
-                        <i className="bi bi-house-heart fill me-2"></i>
+                        <i className="bi bi-house-heart-fill me-2"></i>
                         Livestock
                     </a>
                 </li>
