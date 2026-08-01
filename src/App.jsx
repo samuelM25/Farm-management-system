@@ -5,32 +5,41 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from'./components/Navbar/Navbar.jsx'
 import Sidebar from'./components/Sidebar/Sidebar.jsx'
-import Login from'./components/login/login.jsx'
+import Dashboard from './pages/dashboard/dashboard.jsx'
+import {BrowserRouter ,Routes,Route} from "react-router-dom";
+
 
 
 function App() {
 
 return(
-  <>
   
-  <div className='d-flex flex-column vh-100'>
-   <Navbar />
-    
-    <div className='d-flex flex-grow-1'>
-     <Sidebar/>
-    
+  <BrowserRouter>
 
-     <div className='container mt-5'>
-       <h1 className='text-success'>
-       welcome to linah farm management system
-       </h1>
+  <div className='d-flex'>
+    <Sidebar/>
+   <div style={{marginLeft:"260px"}} className='flex-grow-1'>
+     <Navbar />
 
-       <button className='btn btn-primary mt-3'>
-        Get Started</button>
-     </div>
-    </div>
+     <main className='p-4'>
+      <Routes>
+       <Route path='/' element={<dashboard/>}/>
+       <Route path='/dashboard' element={<dashboard/>}/>
+       <Route path='/crops' element={<crops/>}/>
+       <Route path='/livestock' element={<livestock/>}/>
+       <Route path='/reports' element={<reports/>}/>
+       
+
+      </Routes>
+     <Dashboard/>
+     </main>
+   </div>
+   
+       
   </div>
-  </>
+  </BrowserRouter>
+
+  
 )
 }
 
