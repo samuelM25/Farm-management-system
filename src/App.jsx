@@ -5,7 +5,8 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from'./components/Navbar/Navbar.jsx'
 import Sidebar from'./components/Sidebar/Sidebar.jsx'
-import Dashboard from './pages/dashboard/dashboard.jsx'
+import Dashboard from './pages/Dashboard/Dashboard.jsx'
+import Adddata from './pages/Adddata.jsx'
 import {BrowserRouter ,Routes,Route} from "react-router-dom";
 
 
@@ -23,15 +24,15 @@ return(
 
      <main className='p-4'>
       <Routes>
-       <Route path='/' element={<dashboard/>}/>
-       <Route path='/dashboard' element={<dashboard/>}/>
-       <Route path='/crops' element={<crops/>}/>
-       <Route path='/livestock' element={<livestock/>}/>
-       <Route path='/reports' element={<reports/>}/>
+
+       <Route path='/'element={<Dashboard/>}/>
+       <Route path='/dashboard' element={<Dashboard/>}/>
+       <Route path='/Adddata' element ={<Adddata/>}/>
+   
        
 
+
       </Routes>
-     <Dashboard/>
      </main>
    </div>
    

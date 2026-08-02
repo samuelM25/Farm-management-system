@@ -20,16 +20,15 @@ function Sidebar(){
 
             <ul className="nav flex-column list-unstyled">
 
-                <NavLink to="/dasdhboard" className={({isActive}) =>
+                <NavLink to="/dashboard" className={({isActive}) =>
                 isActive 
                     ? "nav-link bg-success text-white rounded"
                     : "nav-link text-white"}>
 
                     <li className="nav-item mb-3">
-                        <a className=" nav-link text-white active" href="">
-                            <i className="bi bi-speedometer2 me-2"></i>
-                            Dashboard
-                        </a>
+                        <i className="bi bi-speedometer2 me-2"></i>
+                        Dashboard
+                        
                     </li>
                 </NavLink>
 
@@ -39,10 +38,8 @@ function Sidebar(){
                     : "nav-link text-white"}>
 
                     <li className="nav-item mb-3">
-                        <a className="nav-link text-white active" href="">
                             <i className="bi bi-egg-fill me-2"></i>
                             Poultry Management
-                        </a>
                     </li>
                 </NavLink>
 
@@ -52,24 +49,20 @@ function Sidebar(){
                     : "nav-link text-white"}>
 
                     <li className="nav-item mb-3">
-                        <a className="nav-link text-white active" href="">
                             <i className="bi bi-cash-stack me-2"></i>
                             Expenses
-                        </a>
                     </li>
                 </NavLink>
 
 
-                 <NavLink to="/Add farm data" className={({isActive}) =>
+                 <NavLink to="/Adddata" className={({isActive}) =>
                 isActive 
                     ? "nav-link bg-success text-white rounded"
                     : "nav-link text-white"}>
 
                     <li className="nav-item mb-3">
-                        <a className="nav-link text-white active" href="">
                             <i className="bi bi-clipboard-data me-2"></i>
                             Add Farm Data
-                        </a>
                     </li>
                 </NavLink>
 
@@ -79,10 +72,8 @@ function Sidebar(){
                     : "nav-link text-white"}>
 
                     <li className="nav-item mb-3">
-                        <a className="nav-link text-white active" href="">
                             <i className="bi bi-house-heart-fill me-2"></i>
                             Livestock
-                        </a>
                     </li>
                 </NavLink>
 
@@ -92,10 +83,8 @@ function Sidebar(){
                     : "nav-link text-white"}>
 
                     <li className="nav-item mb-3">
-                        <a className=" nav-link text-white active" href="">
                             <i className="bi bi-flower1 me-2"></i>
                             Crops
-                        </a>
                     </li>
                 </NavLink>
 
@@ -105,10 +94,8 @@ function Sidebar(){
                     : "nav-link text-white"}>
 
                     <li className="nav-item mb-3">
-                        <a className="nav-link text-white active" href="">
                             <i className="bi bi-bar-chart me-2"></i>
                             Reports
-                        </a>
                     </li>
                 </NavLink>
 
@@ -118,10 +105,8 @@ function Sidebar(){
                     : "nav-link text-white"}>
 
                 <li className="nav-item mb-3">
-                    <a className="nav-link text-white active" href="">
                         <i className="bi bi-gear me-2"></i>
                         Settings
-                    </a>
                 </li>
                 </NavLink>
             </ul>
