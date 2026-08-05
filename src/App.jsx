@@ -7,7 +7,9 @@ import Navbar from'./components/Navbar/Navbar.jsx'
 import Sidebar from'./components/Sidebar/Sidebar.jsx'
 import Dashboard from './pages/Dashboard/Dashboard.jsx'
 import Adddata from './pages/Adddata.jsx'
-import {BrowserRouter ,Routes,Route} from "react-router-dom";
+import Expenses from './pages/Expense/Expenses.jsx'
+import {BrowserRouter ,Routes,Route} from "react-router-dom"
+import {AddExpense } from './pages/Expense/AddExpense.jsx';
 
 
 
@@ -28,6 +30,8 @@ return(
        <Route path='/'element={<Dashboard/>}/>
        <Route path='/dashboard' element={<Dashboard/>}/>
        <Route path='/Adddata' element ={<Adddata/>}/>
+       <Route path='/expenses' element={<Expenses/>}/>
+       <Route path='/add-expense' element={<AddExpense/>}/>
    
        
 
