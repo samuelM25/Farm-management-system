@@ -10,6 +10,7 @@ import Adddata from './pages/Adddata.jsx'
 import Expenses from './pages/Expense/Expenses.jsx'
 import {BrowserRouter ,Routes,Route} from "react-router-dom"
 import {AddExpense } from './pages/Expense/AddExpense.jsx';
+import PoultryManagement from './pages/PoultryManagement.jsx'
 
 
 
@@ -32,6 +33,7 @@ return(
        <Route path='/Adddata' element ={<Adddata/>}/>
        <Route path='/expenses' element={<Expenses/>}/>
        <Route path='/add-expense' element={<AddExpense/>}/>
+       <Route path='/PoultryManagement' element={<PoultryManagement/>}/>
    
        
 
