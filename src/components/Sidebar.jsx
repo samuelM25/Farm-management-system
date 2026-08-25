@@ -32,8 +32,8 @@ function Sidebar(){
                     </li>
                 </NavLink>
 
-                 <NavLink to="/poultry managment" className={({isActive}) =>
-                isActive 
+                 <NavLink to="/PoultryManagement" className={({isActive}) =>
+                 isActive 
                     ? "nav-link bg-success text-white rounded"
                     : "nav-link text-white"}>
 

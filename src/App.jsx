@@ -3,13 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import Navbar from'./components/Navbar/Navbar.jsx'
-import Sidebar from'./components/Sidebar/Sidebar.jsx'
-import Dashboard from './pages/Dashboard/Dashboard.jsx'
+import Navbar from'./components/Navbar.jsx'
+import Sidebar from'./components/Sidebar.jsx'
+import Dashboard from './pages/Dashboard.jsx'
 import Adddata from './pages/Adddata.jsx'
-import Expenses from './pages/Expense/Expenses.jsx'
+import Expenses from './pages/Expenses.jsx'
 import {BrowserRouter ,Routes,Route} from "react-router-dom"
-import {AddExpense } from './pages/Expense/AddExpense.jsx';
+import {AddExpense } from './pages/AddExpense.jsx';
 import PoultryManagement from './pages/PoultryManagement.jsx'
 
 
