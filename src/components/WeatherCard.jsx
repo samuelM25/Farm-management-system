@@ -1,74 +1,36 @@
 function WeatherCard() {
+  return (
+    <div className="card shadow-sm border-0">
+      <div className="card-body text-center">
+        <i
+          className="bi bi-sun-fill text-warning"
+          style={{
+            fontSize: "60px",
+          }}
+        ></i>
 
-    return (
+        <h2 className="mt-3">28°C</h2>
 
-        <div className="card shadow-sm border-0">
+        <p className="text-muted">Sunny</p>
 
-            <div className="card-body text-center">
+        <hr />
 
-                <i
-                    className="bi bi-sun-fill text-warning"
-                    style={{
-                        fontSize: "60px"
-                    }}
-                ></i>
+        <div className="row">
+          <div className="col">
+            <strong>Humidity</strong>
 
-                <h2 className="mt-3">
+            <p>75%</p>
+          </div>
 
-                    28°C
+          <div className="col">
+            <strong>Wind</strong>
 
-                </h2>
-
-                <p className="text-muted">
-
-                    Sunny
-
-                </p>
-
-                <hr />
-
-                <div className="row">
-
-                    <div className="col">
-
-                        <strong>
-
-                            Humidity
-
-                        </strong>
-
-                        <p>
-
-                            75%
-
-                        </p>
-
-                    </div>
-
-                    <div className="col">
-
-                        <strong>
-
-                            Wind
-
-                        </strong>
-
-                        <p>
-
-                            12 km/h
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+            <p>12 km/h</p>
+          </div>
         </div>
-
-    );
-
+      </div>
+    </div>
+  );
 }
 
 export default WeatherCard;
