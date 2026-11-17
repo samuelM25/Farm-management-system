@@ -1,40 +1,32 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
 import "./App.css";
-import Navbar from "./components/Navbar.jsx";
-import Sidebar from "./components/Sidebar.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import Adddata from "./pages/Adddata.jsx";
 import Expenses from "./pages/Expenses.jsx";
+import Login from "./pages/Auth/login.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AddExpense } from "./components/AddExpense.jsx";
 import PoultryManagement from "./pages/PoultryManagement.jsx";
+import Mainlayout from "./pages/layout/mainlayout.jsx";
+import Sales from "./pages/sales.jsx";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="d-flex">
-        <Sidebar />
-        <div style={{ marginLeft: "260px" }} className="flex-grow-1">
-          <Navbar />
+      <Routes>
+        {/* Login page - without sidebar and navbar */}
+        <Route path="/login" element={<Login />} />
 
-          <main className="p-4">
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/Adddata" element={<Adddata />} />
-              <Route path="/expenses" element={<Expenses />} />
-              <Route path="/add-expense" element={<AddExpense />} />
-              <Route
-                path="/PoultryManagement"
-                element={<PoultryManagement />}
-              />
-            </Routes>
-          </main>
-        </div>
-      </div>
+        {/* Application pages - with sidebar and navbar */}
+        <Route element={<Mainlayout />}>
+          <Route path="/sales" element={<Sales />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/Adddata" element={<Adddata />} />
+          <Route path="/expenses" element={<Expenses />} />
+          <Route path="/add-expense" element={<AddExpense />} />
+          <Route path="/PoultryManagement" element={<PoultryManagement />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
